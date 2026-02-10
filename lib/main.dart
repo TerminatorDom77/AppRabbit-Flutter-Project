@@ -59,9 +59,9 @@ class _MyHomePageState extends State<MyHomePage> {
     }
     if (query.trim().isEmpty){
       setState((){
-        if (currentPage == 1){
-          images.clear();
-        }
+        images.clear();
+        currentPage = 1;
+        currentQuery = '';
       });
       return;
     }
